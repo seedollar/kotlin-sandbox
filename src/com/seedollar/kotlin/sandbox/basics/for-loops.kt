@@ -18,4 +18,8 @@ fun main(args: Array<String>) {
 
     for ((idx,v) in numbers.withIndex())
         println("idx: $idx || v = $v")
+
+    val word = "flashbang"
+    // Use until to exclude the last element (word.length), so should print "letter" 8 times
+    (1 until word.length).forEach { println("letter") }
 }
